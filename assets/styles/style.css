@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap');
+body{
+    background-color:#e4eff7;
+    font-family: 'Cantarell', sans-serif;;
+}
+a{
+    text-decoration: none;
+    color:#212529;
+}
+a:hover{
+    text-decoration: none;
+    color:#212529;
+}
+a:focus{
+    text-decoration: none;
+    color:#212529;
+}
+.hero{
+    padding-top:30px;
+}
+.energyimg{
+ margin-top:32%;
+ width:100px;
+}
+.erpimg{
+margin-top:32%;
+width:100px
+}
+.select{
+    margin-top:140px
+}
+.center{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+    margin-top: 20px;
+}
+.energy{
+    margin-left: auto;
+    margin-right: auto;
+    width:340px;
+    height:320px;
+    border-radius: 50px;
+    background: #e4eff7;
+    box-shadow:  18px 18px 38px #c9d2d9,
+                -18px -18px 38px #ffffff;
+}
+.energy:hover{
+    box-shadow: inset 18px 18px 38px #c9d2d9,
+            inset -18px -18px 38px #ffffff;
+}
+.energy:focus{
+    box-shadow: inset 18px 18px 38px #c9d2d9,
+            inset -18px -18px 38px #ffffff;
+}
+.erp{
+    margin-left: auto;
+    margin-right: auto;
+    width:340px;
+    height:320px;
+    border-radius: 50px;
+    background: #e4eff7;
+    box-shadow:  18px 18px 38px #c9d2d9,
+                -18px -18px 38px #ffffff;
+}
+.erp:hover{
+    box-shadow: inset 18px 18px 38px #c9d2d9,
+            inset -18px -18px 38px #ffffff;
+}
+.erp:focus{
+    box-shadow: inset 18px 18px 38px #c9d2d9,
+            inset -18px -18px 38px #ffffff;
+}
+
+@media screen and (min-width:1024px) {
+    .hero{
+        padding-top:30px;
+    }
+    .energyimg{
+     margin-top:32%;
+     width:100px;
+    }
+    .erpimg{
+    margin-top:32%;
+    width:100px
+    }
+    .select{
+        margin-top:140px
+    }
+    .center{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+    .energy{
+        margin-left: auto;
+        margin-right: auto;
+        width:340px;
+        height:320px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+    .erp{
+        margin-left: auto;
+        margin-right: auto;
+        width:340px;
+        height:320px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }  
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .energy{
+        margin-left: auto;
+        margin-right: auto;
+        width:300px;
+        height:300px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+    .erp{
+        margin-left: auto;
+        margin-right: auto;
+        width:300px;
+        height:300px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .hero{
+        padding-top:10px;
+    }
+    .energyimg{
+     width:80px;
+    }
+    .erpimg{
+    width:80px
+    }
+    .select{
+        margin-top:40px
+    }
+    
+    .energy{
+        margin-left: auto;
+        margin-right: auto;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+    .erp{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+    .hero{
+        padding-top:10px;
+    }
+    .energyimg{
+     width:70px;
+    }
+    .erpimg{
+    width:70px
+    }
+    .select{
+        margin-top:30px
+    }
+    .center{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+    .energy{
+        margin-left: auto;
+        margin-right: auto;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+    .erp{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:40px;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+}
+@media screen and (min-width:320px) and (max-width:375px){
+    .hero{
+        padding-top:10px;
+    }
+    .energyimg{
+     width:70px;
+    }
+    .erpimg{
+    width:70px
+    }
+    .select{
+        margin-top:30px
+    }
+    .center{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+    .energy{
+        margin-left: auto;
+        margin-right: auto;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+    .erp{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:40px;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+}
+@media screen and (max-width:320px){
+    .hero{
+        padding-top:10px;
+    }
+    .energyimg{
+     width:70px;
+    }
+    .erpimg{
+    width:70px
+    }
+    .select{
+        margin-top:30px
+    }
+    .center{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+    .energy{
+        margin-left: auto;
+        margin-right: auto;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+    .erp{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:40px;
+        width:210px;
+        height:210px;
+        border-radius: 50px;
+        background: #e4eff7;
+        box-shadow:  18px 18px 38px #c9d2d9,
+                    -18px -18px 38px #ffffff;
+    }
+}
