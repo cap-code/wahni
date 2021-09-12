@@ -4,16 +4,8 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
  preserveAspectRatio="xMidYMid meet">
-<defs>
-   <linearGradient id="lgrad" x1="7%" y1="0%" x2="93%" y2="100%" >
-    
-          <stop offset="0%" style="stop-color:rgb(94,252,232);stop-opacity:1.00" />
-          <stop offset="53%" style="stop-color:rgb(115,110,254);stop-opacity:1.00" />
-
-    </linearGradient>
-  </defs>
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="url(#lgrad)" stroke="none">
+fill="#175a74" stroke="none">
 <path d="M353 4965 c-165 -36 -294 -162 -338 -332 -13 -50 -15 -268 -15 -1633
 0 -1731 -3 -1634 60 -1745 35 -61 120 -144 176 -173 104 -53 87 -52 937 -52
 l789 0 -7 -32 c-7 -33 -110 -493 -120 -535 l-5 -23 -315 0 -315 0 0 -150 0
