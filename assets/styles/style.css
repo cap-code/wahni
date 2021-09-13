@@ -22,8 +22,7 @@
   }  
   
 body{
-    background-color:#d8dcdf;
-    
+    background-color:#dadaed;
 }
 a{
     text-decoration: none;
@@ -31,24 +30,33 @@ a{
 }
 
 .topsection{
-      /* Background color */
-      background-color:#42b649;
-      color:#d8dcdf;
+    position :relative;  
+}
+.topgreen{
+    position:relative;
+}
+.topgreen:before{
+    transition: all ease-in 0.5s;
+}
+.topblue{
+    position: relative;
+}
+.topblue:before{
+    transition: all ease-in 0.5s;
+}
+.topsection:before{
+   content: "";
+   position: absolute; 
+   top:0;
+   left:0;
+   width:100%; 
+   height:200px; 
+   background: url('../images/1440bluesvg.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -1;
+}
 
-      /* You can use gradient background color such as
-      background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%); */
-  
-      /* Curved corners */
-      border-bottom-left-radius: 50% 40%;
-      border-bottom-right-radius: 50% 40%;
-      transition:all linear 0.5s;
-}
-.topsectionChangeGreen{
-    background-color: #42b649;
-}
-.topsectionChangeBlue{
-    background-color: #175a74;
-}
 a:hover{
     text-decoration: none;
     color:#212529;
@@ -63,11 +71,24 @@ a:focus{
     font-weight: 700;
 }
 .logo{
-    width:77px;
-    border-radius: 21px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    width:90px;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f3f4fd;
     background: #d8dcdf;
-    box-shadow:  8px 8px 15px #b8bbbe,
-                -8px -8px 15px #f8fdff;
+    box-shadow:inset  2px 2px 2px #aaadb1,
+               inset -2px -2px 2px #f8fdff;
+
+}
+.logoimg{
+    position: relative;
+    width:100%;
+    padding: 5px;
+    transition: all ease-in 2s;
 }
 .energyimg{
  margin-top:32%;
@@ -104,12 +125,12 @@ width:100px
 }
 
 .energy:hover{
-    box-shadow: inset 18px 18px 38px #c9d2d9,
-            inset -18px -18px 38px #ffffff;
+    box-shadow: inset 5px 5px 10px #c9d2d9,
+            inset -5px -5px 10px #ffffff;
 }
 .energy:active{
-    box-shadow: inset 18px 18px 38px #c9d2d9,
-            inset -18px -18px 38px #ffffff;
+    box-shadow: inset 5px 5px 10px #c9d2d9,
+            inset -5px -5px 10px #ffffff;
 }
 .erp{
     margin-left: auto;
@@ -125,15 +146,60 @@ width:100px
 }
 
 .erp:hover{
-    box-shadow: inset 18px 18px 38px #c9d2d9,
-            inset -18px -18px 38px #ffffff;
+    box-shadow: inset 5px 5px 10px #c9d2d9,
+            inset -5px -5px 10px #ffffff;
 }
 .erp:active{
-    box-shadow: inset 18px 18px 38px #c9d2d9,
-            inset -18px -18px 38px #ffffff;
+    box-shadow: inset 5px 5px 10px #c9d2d9,
+            inset -5px -5px 10px #ffffff;
 }
 
 @media screen and (min-width:1024px) {
+    .herotext{
+        text-align: center;
+    }
+    .herotext:before{
+        content:"Wahni Green Technologies"
+    }
+    .subtext{
+        margin-top: 108px;
+    }
+    .topsection:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/1440greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+     }
+     .topgreen:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/1440greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .topblue:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/1440bluesvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
     .hero{
         padding-top:30px;
     }
@@ -146,7 +212,7 @@ width:100px
     width:100px
     }
     .select{
-        margin-top:110px
+        margin-top:60px
     }
     .center{
         display: flex;
@@ -162,9 +228,9 @@ width:100px
         width:340px;
         height:320px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  34px 34px 68px #b8bbbe,
-             -34px -34px 68px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
         transition: all 0.9s;
     }
     .erp{
@@ -173,23 +239,71 @@ width:100px
         width:340px;
         height:320px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  34px 34px 68px #b8bbbe,
-             -34px -34px 68px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
         transition: all 0.9s;
 
     }  
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    .herotext{
+        text-align: center;
+    }
+    .herotext:before{
+        content:"Wahni Green Technologies"
+    }
+    .subtext{
+        margin-top: 125px;
+    }
+    .topsection:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/1024greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+     }
+     .topgreen:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/1024greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .topblue:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/1024bluesvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .select{
+         margin-top: 50px;
+     }
     .energy{
         margin-left: auto;
         margin-right: auto;
         width:300px;
         height:300px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  30px 30px 60px #b8bbbe,
-             -30px -30px 60px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
     .erp{
         margin-left: auto;
@@ -197,12 +311,73 @@ width:100px
         width:300px;
         height:300px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  30px 30px 60px #b8bbbe,
-             -30px -30px 60px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
 }
 @media screen and (min-width:425px) and (max-width:768px){
+    .herotext{
+        text-align: right;
+    }
+    .herotext:before{
+        content:"Wahni Green Technologies";
+        text-align: right;
+    }
+    .subtext{
+        margin-top: 120px;
+    }
+    .logo{
+        position: absolute;
+        top:6px;
+        left:6px;
+        width:60px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #f3f4fd;
+        background: #d8dcdf;
+        box-shadow:inset  2px 2px 2px #aaadb1,
+                   inset -2px -2px 2px #f8fdff;
+    
+    }
+    .topsection:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/768greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+     }
+     .topgreen:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/768greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .topblue:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/768bluesvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     
     .hero{
         padding-top:10px;
     }
@@ -213,32 +388,92 @@ width:100px
     width:80px
     }
     .select{
-        margin-top:40px
+        margin-top:44px
     }
     
     .energy{
         margin-left: auto;
         margin-right: auto;
-        width:210px;
-        height:210px;
+        width:240px;
+        height:240px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
     .erp{
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
-        width:210px;
-        height:210px;
+        width:240px;
+        height:240px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
 }
 @media screen and (min-width:375px) and (max-width:425px){
+    .herotext{
+        text-align: center;
+    }
+    .herotext:before{
+        content:"Wahni"
+    }
+    .subtext{
+        margin-top: 100px;
+    }
+    .logo{
+        position: absolute;
+        top:10px;
+        left:10px;
+        width:60px;
+        border-radius: 8px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #f3f4fd;
+        background: #d8dcdf;
+        box-shadow:inset  2px 2px 2px #aaadb1,
+                   inset -2px -2px 2px #f8fdff;
+    
+    }
+    .topsection:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+     }
+     .topgreen:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .topblue:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425bluesvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     
     .hero{
         padding-top:10px;
     }
@@ -249,7 +484,7 @@ width:100px
     width:70px
     }
     .select{
-        margin-top:40px
+        margin-top:44px
     }
     .center{
         display: flex;
@@ -265,9 +500,9 @@ width:100px
         width:210px;
         height:210px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
     .erp{
         margin-left: auto;
@@ -276,12 +511,71 @@ width:100px
         width:210px;
         height:210px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
 }
 @media screen and (min-width:320px) and (max-width:375px){
+    .herotext{
+        text-align: center;
+    }
+    .herotext:before{
+        content:"Wahni"
+    }
+    .subtext{
+        margin-top: 80px;
+    }
+    .logo{
+        position: absolute;
+        top:10px;
+        left:10px;
+        width:60px;
+        border-radius: 8px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #f3f4fd;
+        background: #d8dcdf;
+        box-shadow:inset  2px 2px 2px #aaadb1,
+                   inset -2px -2px 2px #f8fdff;
+    
+    }
+    .topsection:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+     }
+     .topgreen:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .topblue:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425bluesvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
     .hero{
         padding-top:10px;
     }
@@ -292,7 +586,7 @@ width:100px
     width:70px
     }
     .select{
-        margin-top:30px
+        margin-top:44px
     }
     .center{
         display: flex;
@@ -308,9 +602,9 @@ width:100px
         width:210px;
         height:210px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
     .erp{
         margin-left: auto;
@@ -319,12 +613,71 @@ width:100px
         width:210px;
         height:210px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
 }
 @media screen and (max-width:320px){
+    .herotext{
+        text-align: center;
+    }
+    .herotext:before{
+        content:"Wahni"
+    }
+    .subtext{
+        margin-top: 42px;
+    }
+    .logo{
+        position: absolute;
+        top:10px;
+        left:10px;
+        width:60px;
+        border-radius: 8px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #f3f4fd;
+        background: #d8dcdf;
+        box-shadow:inset  2px 2px 2px #aaadb1,
+                   inset -2px -2px 2px #f8fdff;
+    
+    }
+    .topsection:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+     }
+     .topgreen:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425greensvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
+     .topblue:before{
+        content: "";
+        position: absolute; 
+        top:0;
+        left:0;
+        width:100%; 
+        height:200px; 
+        background: url('../images/425bluesvg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1; 
+     }
     .hero{
         padding-top:10px;
     }
@@ -351,9 +704,9 @@ width:100px
         width:210px;
         height:210px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
     .erp{
         margin-left: auto;
@@ -362,8 +715,8 @@ width:100px
         width:210px;
         height:210px;
         border-radius: 50px;
-        background: #d8dcdf;
-        box-shadow:  21px 21px 42px #b8bbbe,
-             -21px -21px 42px #f8fdff;
+        background: #dadaed;
+        box-shadow:  5px 5px 10px #b9b9c9,
+                    -5px -5px 10px #fbfbff;
     }
 }
