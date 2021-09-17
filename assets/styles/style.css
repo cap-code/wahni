@@ -1,722 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }  
-  
 body{
-    background-color:#dadaed;
+    background-image: url('../images/back.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-a{
-    text-decoration: none;
-    color:#212529;
-}
-
-.topsection{
-    position :relative;  
-}
-.topgreen{
-    position:relative;
-}
-.topgreen:before{
-    transition: all ease-in 0.5s;
-}
-.topblue{
-    position: relative;
-}
-.topblue:before{
-    transition: all ease-in 0.5s;
-}
-.topsection:before{
-   content: "";
-   position: absolute; 
-   top:0;
-   left:0;
-   width:100%; 
-   height:200px; 
-   background: url('../images/1440bluesvg.svg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   z-index: -1;
+.animateout{
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(
+        0deg) rotateY(
+        0deg) rotateZ(
+        0deg) skew(
+        0deg, 
+        0deg);
+            transform-style: preserve-3d;
 }
 
-a:hover{
-    text-decoration: none;
-    color:#212529;
-}
-a:focus{
-    text-decoration: none;
-    color:#212529;
-}
-.hero{
-    /* padding-top:30px; */
-    font-family:  'Poppins', sans-serif;
-    font-weight: 700;
-}
-.logo{
-    position: absolute;
-    top:10px;
-    left:10px;
-    width:90px;
-    border-radius: 12px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #f3f4fd;
-    background: #d8dcdf;
-    box-shadow:inset  2px 2px 2px #aaadb1,
-               inset -2px -2px 2px #f8fdff;
+.animatein{
+    transform: translate3d(0px, 0px, 0px) scale3d(0.95, 0.95, 1) rotateX(
+        0deg) rotateY(
+        0deg) rotateZ(
+        0deg) skew(
+        0deg, 
+        0deg);
+            transform-style: preserve-3d;
 
 }
-.logoimg{
-    position: relative;
-    width:100%;
-    padding: 5px;
-    transition: all ease-in 2s;
+.page{
+    max-height:100vh;
+    min-height: 100vh;
 }
-.energyimg{
- margin-top:32%;
- width:100px;
-}
-.erpimg{
-margin-top:32%;
-width:100px
-}
-.select{
-    margin-top:140px
-}
-.center{
+.contents{
     display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer{
-    margin-top: 20px;
-    font-family: 'Cantarell', sans-serif;
-
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    max-height: 100vh;
+    
 }
 .energy{
+    transition: all 0.4s ease-out;
+    margin:20px;
+}
+.it{
+    transition: all 0.4s ease-out;
+    margin:20px;
+}
+.portal{
+    position:relative;
+    width: 380px;
+    height:380px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25)
+}
+.image{
+    width:80%;
+    height: 80%;
     margin-left: auto;
     margin-right: auto;
-    width:340px;
-    height:320px;
-    border-radius: 50px;
-    background: #d8dcdf;
-    box-shadow:  34px 34px 68px #b8bbbe,
-             -34px -34px 68px #f8fdff;
-     animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
+    background-color: white;
+}
+.image img{
+    width:100%;
+    height:100%;
+    padding:20px
+}
+.footer{
+    position: absolute;
+    width:100%;
+    bottom: 0px;
+    text-align: left;
+    color:white;
+    background-color: #1D566E;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px 10px 20px 10px
 }
 
-.energy:hover{
-    box-shadow: inset 5px 5px 10px #c9d2d9,
-            inset -5px -5px 10px #ffffff;
+.head{
+     font-size: 8.5rem;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+    margin-top:-30px;
 }
-.energy:active{
-    box-shadow: inset 5px 5px 10px #c9d2d9,
-            inset -5px -5px 10px #ffffff;
+.subhead{
+    margin-top:-30px;
+    color:white;
+    text-align: center;
 }
-.erp{
-    margin-left: auto;
-    margin-right: auto;
-    width:340px;
-    height:320px;
-    border-radius: 50px;
-    background: #d8dcdf;
-    box-shadow:  34px 34px 68px #b8bbbe,
-             -34px -34px 68px #f8fdff;
-    animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
+.logoDiv{
+    text-align: center;
 }
-
-.erp:hover{
-    box-shadow: inset 5px 5px 10px #c9d2d9,
-            inset -5px -5px 10px #ffffff;
-}
-.erp:active{
-    box-shadow: inset 5px 5px 10px #c9d2d9,
-            inset -5px -5px 10px #ffffff;
-}
-
-@media screen and (min-width:1024px) {
-    .herotext{
-        text-align: center;
-    }
-    .herotext:before{
-        content:"Wahni Green Technologies"
-    }
-    .subtext{
-        margin-top: 108px;
-    }
-    .topsection:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/1440greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-     }
-     .topgreen:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/1440greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .topblue:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/1440bluesvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-    .hero{
-        padding-top:30px;
-    }
-    .energyimg{
-     margin-top:32%;
-     width:100px;
-    }
-    .erpimg{
-    margin-top:32%;
-    width:100px
-    }
-    .select{
-        margin-top:60px
-    }
-    .center{
-        display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer{
-        margin-top: 20px;
-    }
-    .energy{
-        margin-left: auto;
-        margin-right: auto;
-        width:340px;
-        height:320px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-        transition: all 0.9s;
-    }
-    .erp{
-        margin-left: auto;
-        margin-right: auto;
-        width:340px;
-        height:320px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-        transition: all 0.9s;
-
-    }  
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-    .herotext{
-        text-align: center;
-    }
-    .herotext:before{
-        content:"Wahni Green Technologies"
-    }
-    .subtext{
-        margin-top: 125px;
-    }
-    .topsection:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/1024greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-     }
-     .topgreen:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/1024greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .topblue:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/1024bluesvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .select{
-         margin-top: 50px;
-     }
-    .energy{
-        margin-left: auto;
-        margin-right: auto;
-        width:300px;
-        height:300px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-    .erp{
-        margin-left: auto;
-        margin-right: auto;
-        width:300px;
-        height:300px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-}
-@media screen and (min-width:425px) and (max-width:768px){
-    .herotext{
-        text-align: right;
-    }
-    .herotext:before{
-        content:"Wahni Green Technologies";
-        text-align: right;
-    }
-    .subtext{
-        margin-top: 120px;
-    }
-    .logo{
-        position: absolute;
-        top:6px;
-        left:6px;
-        width:60px;
-        border-radius: 10px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #f3f4fd;
-        background: #d8dcdf;
-        box-shadow:inset  2px 2px 2px #aaadb1,
-                   inset -2px -2px 2px #f8fdff;
-    
-    }
-    .topsection:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/768greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-     }
-     .topgreen:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/768greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .topblue:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/768bluesvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     
-    .hero{
-        padding-top:10px;
-    }
-    .energyimg{
-     width:80px;
-    }
-    .erpimg{
-    width:80px
-    }
-    .select{
-        margin-top:44px
-    }
-    
-    .energy{
-        margin-left: auto;
-        margin-right: auto;
-        width:240px;
-        height:240px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-    .erp{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        width:240px;
-        height:240px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-}
-@media screen and (min-width:375px) and (max-width:425px){
-    .herotext{
-        text-align: center;
-    }
-    .herotext:before{
-        content:"Wahni"
-    }
-    .subtext{
-        margin-top: 100px;
-    }
-    .logo{
-        position: absolute;
-        top:10px;
-        left:10px;
-        width:60px;
-        border-radius: 8px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #f3f4fd;
-        background: #d8dcdf;
-        box-shadow:inset  2px 2px 2px #aaadb1,
-                   inset -2px -2px 2px #f8fdff;
-    
-    }
-    .topsection:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-     }
-     .topgreen:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .topblue:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425bluesvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     
-    .hero{
-        padding-top:10px;
-    }
-    .energyimg{
-     width:70px;
-    }
-    .erpimg{
-    width:70px
-    }
-    .select{
-        margin-top:44px
-    }
-    .center{
-        display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer{
-        margin-top: 20px;
-    }
-    .energy{
-        margin-left: auto;
-        margin-right: auto;
-        width:210px;
-        height:210px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-    .erp{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:40px;
-        width:210px;
-        height:210px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-}
-@media screen and (min-width:320px) and (max-width:375px){
-    .herotext{
-        text-align: center;
-    }
-    .herotext:before{
-        content:"Wahni"
-    }
-    .subtext{
-        margin-top: 80px;
-    }
-    .logo{
-        position: absolute;
-        top:10px;
-        left:10px;
-        width:60px;
-        border-radius: 8px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #f3f4fd;
-        background: #d8dcdf;
-        box-shadow:inset  2px 2px 2px #aaadb1,
-                   inset -2px -2px 2px #f8fdff;
-    
-    }
-    .topsection:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-     }
-     .topgreen:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .topblue:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425bluesvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-    .hero{
-        padding-top:10px;
-    }
-    .energyimg{
-     width:70px;
-    }
-    .erpimg{
-    width:70px
-    }
-    .select{
-        margin-top:44px
-    }
-    .center{
-        display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer{
-        margin-top: 20px;
-    }
-    .energy{
-        margin-left: auto;
-        margin-right: auto;
-        width:210px;
-        height:210px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-    .erp{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:40px;
-        width:210px;
-        height:210px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-}
-@media screen and (max-width:320px){
-    .herotext{
-        text-align: center;
-    }
-    .herotext:before{
-        content:"Wahni"
-    }
-    .subtext{
-        margin-top: 42px;
-    }
-    .logo{
-        position: absolute;
-        top:10px;
-        left:10px;
-        width:60px;
-        border-radius: 8px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #f3f4fd;
-        background: #d8dcdf;
-        box-shadow:inset  2px 2px 2px #aaadb1,
-                   inset -2px -2px 2px #f8fdff;
-    
-    }
-    .topsection:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-     }
-     .topgreen:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425greensvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-     .topblue:before{
-        content: "";
-        position: absolute; 
-        top:0;
-        left:0;
-        width:100%; 
-        height:200px; 
-        background: url('../images/425bluesvg.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1; 
-     }
-    .hero{
-        padding-top:10px;
-    }
-    .energyimg{
-     width:70px;
-    }
-    .erpimg{
-    width:70px
-    }
-    .select{
-        margin-top:30px
-    }
-    .center{
-        display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer{
-        margin-top: 20px;
-    }
-    .energy{
-        margin-left: auto;
-        margin-right: auto;
-        width:210px;
-        height:210px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
-    .erp{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:40px;
-        width:210px;
-        height:210px;
-        border-radius: 50px;
-        background: #dadaed;
-        box-shadow:  5px 5px 10px #b9b9c9,
-                    -5px -5px 10px #fbfbff;
-    }
+.logo{
+    width:140px;
 }
